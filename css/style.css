@@ -297,7 +297,8 @@ hr {
   width: 50%;
   height: 100vh;
   padding: 20px 10px;
-  background-color: #f4f5f6;
+  background-color: #fff;
+  border-top: 1px solid #cdd1d5;
   position: fixed;
   right: -100%;
   top: 100px;
@@ -306,7 +307,7 @@ hr {
 }
 .mobile-pop li {
   padding: 8px 16px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   border-radius: 6px;
   transition: 0.3s;
 }
@@ -317,7 +318,7 @@ hr {
   letter-spacing: -0.025em;
 }
 .mobile-pop li:hover {
-  background-color: #c0c0c0;
+  background-color: #f4f5f6;
 }
 .mobile-pop.on {
   right: 0;
@@ -407,9 +408,6 @@ hr {
 }
 /* 480 */
 @media (max-width: 480px) {
-  .sec-tit {
-    font-size: 20px;
-  }
   .sub-tit {
     font-size: 14px;
   }
