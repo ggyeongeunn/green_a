@@ -8,11 +8,11 @@ let swiper = new Swiper(".proSwiper", {
   slidesPerView: 1,
   spaceBetween: 0,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".proSwiper .swiper-button-next",
+    prevEl: ".proSwiper .swiper-button-prev",
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".proSwiper .swiper-pagination",
     clickable: true,
   },
   breakpoints: {
@@ -45,3 +45,12 @@ mobNav.addEventListener("click", () => {
     overlay.style.display = "none";
   }
 });
+overlay.addEventListener("click", (e) => {
+  if (e.target === overlay) {
+    overlay.style.display = "none";
+    menuPop.classList.remove("on");
+  }
+});
+
+const main = document.querySelector("main");
+main.style.marginTop = `${headerHeight}px`;

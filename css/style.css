@@ -78,7 +78,9 @@ header {
   background-color: #fff;
   width: 100%;
   border-bottom: 1px solid #cdd1d5;
-  position: relative;
+  position: fixed;
+  left: 0;
+  top: 0;
   z-index: 50;
 }
 header .upper {
